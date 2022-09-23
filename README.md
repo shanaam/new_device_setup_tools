@@ -37,7 +37,8 @@ Settings:
     "vim.useCtrlKeys": false,
     "vim.useSystemClipboard": true,
     //c# settings for unity
-    "omnisharp.useModernNet": false
+    "omnisharp.useModernNet": false,
+    "editor.tabSize": 2
 }
 
 Keybindings:
