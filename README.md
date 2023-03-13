@@ -16,13 +16,20 @@ Settings:
     "editor.lineNumbers": "relative",
     "editor.suggestSelection": "first",
     "editor.suggest.snippetsPreventQuickSuggestions": false,
+    //git
     "git.autofetch": true,
+    "git.enableSmartCommit": true,
     //vim
+    "vim.smartRelativeLine": true,
     "vim.useCtrlKeys": false,
     "vim.useSystemClipboard": true,
     //c# settings for unity
     "omnisharp.useModernNet": false,
     "editor.tabSize": 2,
+    //python
+    "python.linting.pylintEnabled": true,
+    "python.linting.enabled": true,
+    "python.formatting.provider": "black",
     //terminal commands
     "terminal.integrated.profiles.windows": {
         "ctrl init": {
@@ -35,6 +42,28 @@ Settings:
         }
     },
     "terminal.integrated.defaultProfile.windows": "ctrl init",
+    //terminal other example
+    "terminal.integrated.profiles.windows": {
+        "PowerShell": {
+            "source": "PowerShell",
+            "icon": "terminal-powershell"
+        },
+        "Command Prompt": {
+            "path": [
+                "${env:windir}\\Sysnative\\cmd.exe",
+                "${env:windir}\\System32\\cmd.exe"
+            ],
+            "args": [
+                "/K",
+                "D:\\shanaa\\Programs\\anaconda3\\Scripts\\activate.bat"
+            ],
+            "icon": "terminal-cmd"
+        },
+        "Git Bash": {
+            "source": "Git Bash"
+        }
+    },
+    "terminal.integrated.defaultProfile.windows": "Command Prompt",
 }
 
 Keybindings:
