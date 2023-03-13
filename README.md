@@ -14,13 +14,15 @@ Settings:
     "workbench.colorTheme": "Night Owl",
     "editor.formatOnSave": true,
     "editor.lineNumbers": "relative",
-    "pyls.BuckFormatOnSave": true,
-    "pyls.formatAlreadyFormattedFilesOnSave": true,
-    "pyls.InstagramFormatOnSave": true,
     "editor.suggestSelection": "first",
     "editor.suggest.snippetsPreventQuickSuggestions": false,
-    "intern-tools.showReminderBeforeMeetings": true,
     "git.autofetch": true,
+    //vim
+    "vim.useCtrlKeys": false,
+    "vim.useSystemClipboard": true,
+    //c# settings for unity
+    "omnisharp.useModernNet": false,
+    "editor.tabSize": 2,
     //terminal commands
     "terminal.integrated.profiles.windows": {
         "ctrl init": {
@@ -33,12 +35,6 @@ Settings:
         }
     },
     "terminal.integrated.defaultProfile.windows": "ctrl init",
-    //vim
-    "vim.useCtrlKeys": false,
-    "vim.useSystemClipboard": true,
-    //c# settings for unity
-    "omnisharp.useModernNet": false,
-    "editor.tabSize": 2
 }
 
 Keybindings:
