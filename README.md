@@ -10,7 +10,7 @@ Settings:
     "editor.guides.bracketPairs": true,
     "editor.guides.bracketPairsHorizontal": true,
     "editor.wordWrap": "on",
-    "editor.fontLigatures": true,
+    "editor.fontLigatures": false,
     "editor.fontFamily": "Fira Code",
     "workbench.colorTheme": "Night Owl",
     "editor.formatOnSave": true,
