@@ -4,6 +4,7 @@ settings and keybinds for vscode
 
 Settings:
 {
+    //personal
     "editor.fontSize": 16,
     "editor.bracketPairColorization.enabled": true,
     "editor.guides.bracketPairs": true,
@@ -31,6 +32,7 @@ Settings:
     "python.linting.enabled": true,
     "python.formatting.provider": "black",
     //terminal commands
+    /*
     "terminal.integrated.profiles.windows": {
         "ctrl init": {
             "source": "PowerShell",
@@ -64,6 +66,7 @@ Settings:
         }
     },
     "terminal.integrated.defaultProfile.windows": "Command Prompt",
+    */
 }
 
 Keybindings:
