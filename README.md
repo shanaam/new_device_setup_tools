@@ -129,6 +129,11 @@ Keybindings:
     "when": "editorTextFocus"
   },
   {
+    "key": "alt+shift+k",
+    "command": "editor.action.insertCursorAbove",
+    "when": "editorTextFocus"
+  },
+  {
     "key": "ctrl+alt+down",
     "command": "-editor.action.insertCursorBelow",
     "when": "editorTextFocus"
