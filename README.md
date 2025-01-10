@@ -1,8 +1,9 @@
+# Autohotkey
+Download autohotkey, place the caps_to_esc.ahk file in [USER]\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup
+
 # vscode_settings
 settings and keybinds for vscode
-
-
-Settings:
+## Settings:
 {
     //personal
     "editor.fontSize": 16,
