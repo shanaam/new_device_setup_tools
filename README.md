@@ -74,23 +74,19 @@ Keybindings:
 // Place your key bindings in this file to override the defaults
 [
   {
-    "key": "ctrl+l",
-    "command": "workbench.action.terminal.focusNextPane",
-    "when": "terminalFocus && terminalHasBeenCreated || terminalFocus && terminalProcessSupported"
+    "key": "ctrl+shift+k",
+    "command": "-editor.action.deleteLines",
+    "when": "editorTextFocus && !editorReadonly"
   },
   {
-    "key": "alt+down",
-    "command": "-workbench.action.terminal.focusNextPane",
-    "when": "terminalFocus && terminalHasBeenCreated || terminalFocus && terminalProcessSupported"
+    "key": "ctrl+shift+k",
+    "command": "workbench.action.terminal.focus",
+    "when": "editorTextFocus"
   },
   {
-    "key": "alt+right",
-    "command": "-workbench.action.terminal.focusNextPane",
-    "when": "terminalFocus && terminalHasBeenCreated || terminalFocus && terminalProcessSupported"
-  },
-  {
-    "key": "ctrl+k",
-    "command": "workbench.action.focusActiveEditorGroup"
+    "key": "ctrl+shift+k",
+    "command": "workbench.action.focusActiveEditorGroup",
+    "when": "terminalFocus"
   },
   {
     "key": "ctrl+j",
@@ -115,14 +111,14 @@ Keybindings:
     "command": "workbench.action.terminal.focus"
   },
   {
-    "key": "alt+shift+j",
-    "command": "expandLineSelection",
-    "when": "textInputFocus"
+    "key": "shift+j",
+    "command": "cursorDownSelect",
+    "when": "editorTextFocus && vim.active && vim.mode == 'Normal'"
   },
   {
-    "key": "ctrl+l",
-    "command": "-expandLineSelection",
-    "when": "textInputFocus"
+    "key": "shift+k",
+    "command": "cursorUpSelect",
+    "when": "editorTextFocus && vim.active && vim.mode == 'Normal'"
   },
   {
     "key": "alt+shift+j",
@@ -131,14 +127,8 @@ Keybindings:
   },
   {
     "key": "alt+shift+k",
-    "command": "editor.action.insertCursorAbove",
-    "when": "editorTextFocus"
-  },
-  {
-    "key": "ctrl+alt+down",
-    "command": "-editor.action.insertCursorBelow",
+    "command": "cursorUndo",
     "when": "editorTextFocus"
   }
 ]
-
 
