@@ -18,21 +18,54 @@ settings and keybinds for vscode
     "editor.lineNumbers": "relative",
     "editor.suggestSelection": "first",
     "editor.suggest.snippetsPreventQuickSuggestions": false,
-    //git
+    // Git
     "git.autofetch": true,
     "git.enableSmartCommit": true,
-    //vim
+    "git.confirmSync": true,
+    // Vim
     "vim.smartRelativeLine": true,
     "vim.useCtrlKeys": false,
     "vim.useSystemClipboard": true,
     //c# settings for unity
     "omnisharp.useModernNet": false,
     "editor.tabSize": 2,
-    //python
-    "python.linting.pylintEnabled": true,
-    "python.linting.enabled": true,
-    "python.formatting.provider": "black",
-    //terminal commands
+    // Python
+    "python.terminal.activateEnvironment": true,
+    "python.terminal.executeInFileDir": true,
+    "terminal.integrated.profiles.windows": {
+        "PowerShell": {
+            "source": "PowerShell",
+            "icon": "terminal-powershell"
+        },
+        "Command Prompt": {
+            "path": [
+                "${env:windir}\\Sysnative\\cmd.exe",
+                "${env:windir}\\System32\\cmd.exe"
+            ],
+            "icon": "terminal-cmd"
+        },
+        "Git Bash": {
+            "source": "Git Bash"
+        }
+    },
+    "terminal.integrated.defaultProfile.windows": "PowerShell",
+    "terminal.integrated.env.windows": {
+        "CONDA_AUTO_ACTIVATE_BASE": "false",
+        "CONDA_SHLVL": "0"
+    },
+    "python.analysis.typeCheckingMode": "basic",
+    // Linting and Formatting
+    "[python]": {
+        "editor.formatOnType": true
+    },
+    "editor.formatOnSave": true,
+    "editor.formatOnSaveMode": "modificationsIfAvailable",
+    "editor.codeActionsOnSave": {
+        "source.organizeImports": "explicit"
+    },
+    // Python Formatting
+    "pylint.enabled": false,
+    // Terminal
     /*
     "terminal.integrated.profiles.windows": {
         "ctrl init": {
@@ -40,11 +73,11 @@ settings and keybinds for vscode
             "args": [
                 "-NoExit",
                 "-Command",
-                "conda activate ctrldev",
+                "conda activate [ENV_NAME]",
             ],
         }
     },
-    "terminal.integrated.defaultProfile.windows": "ctrl init",
+    "terminal.integrated.defaultProfile.windows": [LINE TO RUN AT STARTUP (E.G., XXXX init)],
     //terminal other example
     "terminal.integrated.profiles.windows": {
         "PowerShell": {
