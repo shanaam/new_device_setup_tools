@@ -30,77 +30,14 @@ settings and keybinds for vscode
     "omnisharp.useModernNet": false,
     "editor.tabSize": 2,
     // Python
-    "python.terminal.activateEnvironment": true,
-    "python.terminal.executeInFileDir": true,
-    "terminal.integrated.profiles.windows": {
-        "PowerShell": {
-            "source": "PowerShell",
-            "icon": "terminal-powershell"
-        },
-        "Command Prompt": {
-            "path": [
-                "${env:windir}\\Sysnative\\cmd.exe",
-                "${env:windir}\\System32\\cmd.exe"
-            ],
-            "icon": "terminal-cmd"
-        },
-        "Git Bash": {
-            "source": "Git Bash"
-        }
-    },
-    "terminal.integrated.defaultProfile.windows": "PowerShell",
-    "terminal.integrated.env.windows": {
-        "CONDA_AUTO_ACTIVATE_BASE": "false",
-        "CONDA_SHLVL": "0"
-    },
-    "python.analysis.typeCheckingMode": "basic",
-    // Linting and Formatting
-    "[python]": {
-        "editor.formatOnType": true
-    },
+    "editor.defaultFormatter": "charliermarsh.ruff",
     "editor.formatOnSave": true,
-    "editor.formatOnSaveMode": "modificationsIfAvailable",
     "editor.codeActionsOnSave": {
         "source.organizeImports": "explicit"
     },
-    // Python Formatting
+    "python.analysis.inlayHints.variableTypes": true,
+    "python.analysis.inlayHints.functionReturnTypes": true,
     "pylint.enabled": false,
-    // Terminal
-    /*
-    "terminal.integrated.profiles.windows": {
-        "ctrl init": {
-            "source": "PowerShell",
-            "args": [
-                "-NoExit",
-                "-Command",
-                "conda activate [ENV_NAME]",
-            ],
-        }
-    },
-    "terminal.integrated.defaultProfile.windows": [LINE TO RUN AT STARTUP (E.G., XXXX init)],
-    //terminal other example
-    "terminal.integrated.profiles.windows": {
-        "PowerShell": {
-            "source": "PowerShell",
-            "icon": "terminal-powershell"
-        },
-        "Command Prompt": {
-            "path": [
-                "${env:windir}\\Sysnative\\cmd.exe",
-                "${env:windir}\\System32\\cmd.exe"
-            ],
-            "args": [
-                "/K",
-                "D:\\shanaa\\Programs\\anaconda3\\Scripts\\activate.bat"
-            ],
-            "icon": "terminal-cmd"
-        },
-        "Git Bash": {
-            "source": "Git Bash"
-        }
-    },
-    "terminal.integrated.defaultProfile.windows": "Command Prompt",
-    */
 }
 
 Keybindings:
