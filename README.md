@@ -5,7 +5,7 @@ Download autohotkey, place the caps_to_esc.ahk file in [USER]\AppData\Roaming\Mi
 settings and keybinds for vscode
 ## Settings:
 {
-    //personal
+    // Personal
     "editor.fontSize": 16,
     "editor.bracketPairColorization.enabled": true,
     "editor.guides.bracketPairs": true,
@@ -18,6 +18,8 @@ settings and keybinds for vscode
     "editor.lineNumbers": "relative",
     "editor.suggestSelection": "first",
     "editor.suggest.snippetsPreventQuickSuggestions": false,
+    // Claude
+    "claudeCode.preferredLocation": "panel",
     // Git
     "git.autofetch": true,
     "git.enableSmartCommit": true,
@@ -26,18 +28,20 @@ settings and keybinds for vscode
     "vim.smartRelativeLine": true,
     "vim.useCtrlKeys": false,
     "vim.useSystemClipboard": true,
-    //c# settings for unity
-    "omnisharp.useModernNet": false,
-    "editor.tabSize": 2,
     // Python
     "editor.defaultFormatter": "charliermarsh.ruff",
-    "editor.formatOnSave": true,
     "editor.codeActionsOnSave": {
         "source.organizeImports": "explicit"
     },
     "python.analysis.inlayHints.variableTypes": true,
     "python.analysis.inlayHints.functionReturnTypes": true,
     "pylint.enabled": false,
+    // Other
+    "dart.flutterSdkPath": "C:\\Users\\smodc\\programs\\flutter",
+    "markdown-preview-enhanced.revealjsTheme": "vscode.css",
+    "markdown-preview-enhanced.previewTheme": "vscode.css",
+    "markdown-preview-enhanced.codeBlockTheme": "vscode.css",
+    "markdown-preview-enhanced.enablePreviewZenMode": false,
 }
 
 Keybindings:
